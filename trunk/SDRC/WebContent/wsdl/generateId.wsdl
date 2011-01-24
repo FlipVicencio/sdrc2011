@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://serviceWeb" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://serviceWeb" xmlns:intf="http://serviceWeb" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://serviceWeb" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="newGame">
+    <complexType/>
+   </element>
+   <element name="newGameResponse">
+    <complexType>
+     <sequence>
+      <element name="newGameReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="newGameResponse">
+
+      <wsdl:part element="impl:newGameResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="newGameRequest">
+
+      <wsdl:part element="impl:newGame" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="generateId">
+
+      <wsdl:operation name="newGame">
+
+         <wsdl:input message="impl:newGameRequest" name="newGameRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:newGameResponse" name="newGameResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="generateIdSoapBinding" type="impl:generateId">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="newGame">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="newGameRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="newGameResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="generateIdService">
+
+      <wsdl:port binding="impl:generateIdSoapBinding" name="generateId">
+
+         <wsdlsoap:address location="http://localhost:8080/SDRC/services/generateId"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>
