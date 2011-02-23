@@ -97,9 +97,12 @@ public class install extends HttpServlet {
 							props.setProperty("port", install.getPort());
 							props.setProperty("userMySql", install.getUserMySql());
 							props.setProperty("passMySql", passMySql);
-							props.setProperty("hostService", request.getServerName()+":"+request.getServerPort());
+							
+							props.setProperty("hostService", request.getServerName());
+							props.setProperty("portService", String.valueOf(request.getServerPort()));
+							props.setProperty("nameApp", request.getContextPath());
 
-
+							out.print(props.toString());
 							String path = getServletContext().getRealPath("/config");
 
 							File file = new File(path +"/config.properties");

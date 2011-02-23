@@ -44,11 +44,20 @@ public class PlayGame extends HttpServlet {
 
 		super.init();
 		try {
-			stubNewGame = new NewIdStub("http://localhost:8080/ProgettoSDRC/services/newId");
+			//si carica indirizzo servzizi
+			InputStream file = getServletContext().getResourceAsStream("/config/config.properties");
+			Properties props = new Properties();
+			props.load(file);
+			
+			stubNewGame = new NewIdStub("http://"+ props.getProperty("hostService") +":"+ props.getProperty("portService") + props.getProperty("nameApp")+"/services/newId");
 
-			stub = new TrisStub("http://localhost:8080/ProgettoSDRC/services/Tris");
+			stub = new TrisStub("http://"+ props.getProperty("hostService") +":"+ props.getProperty("portService") + props.getProperty("nameApp")+"/services/Tris");
 		} catch (AxisFault e) {
-
+			
+		
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 	}
 

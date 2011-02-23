@@ -16,6 +16,8 @@ InputStream file = getServletContext().getResourceAsStream("/config/config.prope
 if (file == null){
 	response.sendRedirect("install.jsp");
 }
+
+
 %>
 
 <body background="html-img/quadretti.gif" onload="popolaEta()">
