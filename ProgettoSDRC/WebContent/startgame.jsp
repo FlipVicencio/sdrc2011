@@ -34,7 +34,7 @@ if (status != null){
 		<td><b>|</b></td>
 		<td><a href="Account">Gestione Account</a></td>
 		<td><b>|</b></td>
-		<td><a href="Statistics">Rank e Statistiche</a></td>
+		<td><a href="Statistics">Visualizza Statistiche</a></td>
 		<td><b>|</b></td>
 		<td>
 		<a href="Logout">LogOut</a>

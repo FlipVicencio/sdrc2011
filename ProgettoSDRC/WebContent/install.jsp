@@ -117,6 +117,11 @@
 		</td>
 	</tr>
 	<tr>
+	<td>
+	Inserire un primo utente da registrare nel database
+	</td>
+	</tr>
+	<tr>
 		<td>Username</td>
 		<td><input type="text" id="user" name="user"
 			onkeydown="checkInstallButton()" onchange="checkInstallButton()"
