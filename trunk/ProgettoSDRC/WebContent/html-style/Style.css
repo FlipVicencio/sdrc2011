@@ -1,0 +1,124 @@
+@CHARSET "ISO-8859-1";
+
+a.triggerTab { 
+	text-decoration: none;
+	margin-left:27%;
+	margin-top:30px;
+	font-size: 10px;
+	letter-spacing: -1px;
+	font-family: verdana, helvetica, arial, sans-serif;
+	color: #1f75cc;
+	padding: 10px 15px 10px 30px; /*Altezza larghezza */
+	width: 530px;
+	background-color: #e9f4ff;
+	border: 1px solid #a2c8f4;
+	-moz-border-radius-topleft: 20px;
+	-moz-border-radius-topright: 20px;
+	-webkit-border-top-left-radius: 20px;
+	-webkit-border-top-right-radius: 20px;
+	-moz-border-radius-bottomleft: 20px;
+	-moz-border-radius-bottomright: 20px;
+	-webkit-border-bottom-left-radius: 20px;
+	-webkit-border-bottom-right-radius: 20px;
+	display: block;
+	z-index: 1;
+}
+.gameTab { 
+	text-decoration: none;
+	margin-left:27%;
+	margin-top:70px;
+	font-size: 12px;
+	letter-spacing: -1px;
+	font-family: verdana, helvetica, arial, sans-serif;
+	color: #1f75cc;
+	padding: 10px 15px 10px 30px; /*Altezza larghezza */
+	width: 530px;
+	background-color: #e9f4ff;
+	border: 1px solid #a2c8f4;
+	-moz-border-radius-topleft: 20px;
+	-moz-border-radius-topright: 20px;
+	-webkit-border-top-left-radius: 20px;
+	-webkit-border-top-right-radius: 20px;
+	-moz-border-radius-bottomleft: 20px;
+	-moz-border-radius-bottomright: 20px;
+	-webkit-border-bottom-left-radius: 20px;
+	-webkit-border-bottom-right-radius: 20px;
+	display: block;
+	z-index: 1;
+}
+a.casellaGame{
+	color: #1f75cc;
+	text-align:center;
+	background-color: #e9f4ff;
+}
+.buttonGame {
+font-size:36px;
+width: 3em;
+height:3em;
+color: #e9f4ff;
+text-shadow: 1px 1px 1px #000;
+border: solid thin #a2c8f4;
+box-shadow: 2px 2px 2px #bbb;
+background-color: #ce401c;
+background-image: -webkit-gradient(linear, left top, left bottom,
+ from(#a2c8d4), to(#efffff),color-stop(0.4, #b9d2ff));
+}
+.endGame {
+font-size:36px;
+width: 3em;
+height:3em;
+color: #e1e1e1;
+text-shadow: 1px 1px 1px #000;
+border: solid thin #d2d2d2;
+box-shadow: 2px 2px 2px #bbb;
+background-color: #ce401c;
+background-image: -webkit-gradient(linear, left top, left bottom,
+ from(#b2b2b2), to(#e1e1e1),color-stop(0.4, #f7f7f7));
+}
+
+.infoTab { 
+	text-decoration: none;
+	margin-top:0px;
+	font-size: 11px;
+	letter-spacing: -1px;
+	font-family: verdana, helvetica, arial, sans-serif;
+	color: #1f75cc;
+	padding: 10px 15px 10px 30px; /*Altezza larghezza */
+	/*width: 330px;*/
+	background-color: #e9f4ff;
+	border: 1px solid #a2c8f4;
+	/*-moz-border-radius-topleft: 20px;
+	-moz-border-radius-topright: 20px;
+	/*-webkit-border-top-left-radius: 20px;
+	-webkit-border-top-right-radius: 20px;*/
+	-moz-border-radius-bottomleft: 20px;
+	-moz-border-radius-bottomright: 20px;
+	-webkit-border-bottom-left-radius: 20px;
+	/*-webkit-border-bottom-right-radius: 20px;*/
+	display: block;
+	z-index: 1;
+}
+
+a.optionTab { 
+	text-decoration: none;
+	margin-left:35%;
+	margin-top:10%;
+	font-size: 10px;
+	letter-spacing: -1px;
+	font-family: verdana, helvetica, arial, sans-serif;
+	color: #1f75cc;
+	padding: 10px 15px 10px 30px; /*Altezza larghezza */
+	width: 310px;
+	background-color: #e9f4ff;
+	border: 1px solid #a2c8f4;
+	-moz-border-radius-topleft: 20px;
+	-moz-border-radius-topright: 20px;
+	-webkit-border-top-left-radius: 20px;
+	-webkit-border-top-right-radius: 20px;
+	-moz-border-radius-bottomleft: 20px;
+	-moz-border-radius-bottomright: 20px;
+	-webkit-border-bottom-left-radius: 20px;
+	-webkit-border-bottom-right-radius: 20px;
+	display: block;
+	z-index: 1;
+}
