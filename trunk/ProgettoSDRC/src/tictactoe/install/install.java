@@ -149,7 +149,6 @@ public class install extends HttpServlet {
 			String path = getServletContext().getRealPath("/config");
 			
 			FileReader fr = new FileReader(new File(path + "/tictactoe.sql"));  
-			// be sure to not have line starting with "--" or "/*" or any other non aplhabetical character  
 
 			BufferedReader br = new BufferedReader(fr);  
 
@@ -159,14 +158,10 @@ public class install extends HttpServlet {
 			}  
 			br.close();  
 
-			// here is our splitter ! We use ";" as a delimiter for each request  
-			// then we are sure to have well formed statements  
 			String[] inst = sb.toString().split(";");  
 
 			for(int i = 0; i<inst.length; i++)  
 			{  
-				// we ensure that there is no spaces before or after the request string  
-				// in order to not execute empty statements  
 				if(!inst[i].trim().equals(""))  
 				{  
 					statement.execute(inst[i]);  

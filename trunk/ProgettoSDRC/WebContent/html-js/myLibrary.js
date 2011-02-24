@@ -72,8 +72,3 @@ function popolaEta() {
 		oOption.innerHTML = int;
 	}
 }
-
-//esegue mossa 
-function eseguiMossa(indice){
-	window.location = 'PlayGame';
-}
