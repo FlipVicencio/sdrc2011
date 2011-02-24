@@ -118,7 +118,7 @@
 	</tr>
 	<tr>
 	<td>
-	Inserire un primo utente da registrare nel database
+	<I>Inserire un primo utente da registrare nel database</I>
 	</td>
 	</tr>
 	<tr>
